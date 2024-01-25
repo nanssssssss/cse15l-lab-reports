@@ -46,8 +46,8 @@
 ![Image](cat.png)
 
 * I am working in the `home` directory in this example
-* The `cat` command is used to print the contents of one or more files given by the path
-* Since we are providing no paths, `cat` just prints out the user input that we provide in the terminal back to us until we cancel out the command 
+* The `cat` command is used to print the contents of one or more files given by a path
+* Since I am providing no paths, `cat` would just print out the user input that we provide in the terminal back to us until we cancel out the command with control C
 
 ### 8. cat command with a path to a directory ###
 ![Image](catdirectory.png)
