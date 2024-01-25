@@ -15,7 +15,7 @@
 
 
 ### 3. cd command with a path to a file ###
-![Image](cdfile.png)
+![Image](cdfi.png)
 
 * In this example, I am already in the `lecture1` directory
 * Entering `cd` with the path to the `en-us.txt` file gives me an error
