@@ -5,13 +5,14 @@
 
 * The `cd` command with no arguments is used to switch the current working directory to the `home` directory 
 * When I type in `cd`, nothing changes because I am already in the `home` directory
+* However, if I were in a different directory, if I used the `cd` command I would be taken back to my home directory 
 
 
 ### 2. cd command with a path to a directory ###
 ![Image](cddirectory.png)
 
 * The current directory I am working on in this example is the `home` directory 
-* Typing in `cd` with the path to the `lecture1` directory changes my current directory to that of `lecture1`
+* Typing in `cd` with the path to the `lecture1` directory would change my current directory to `lecture1`
 
 
 ### 3. cd command with a path to a file ###
@@ -25,7 +26,8 @@
 ![Image](ls.png)
 
 * The `ls` command is used to list the files and folders of a given path
-* Since I am working in the `home` directory in this example, typing in `ls` prints all the contents of the `home` directory which is just `lecture1`
+* Since I am working in the `home` directory in this example, typing in `ls` prints all the contents of the `home` directory, which is `lecture1`
+* If I was in the `lecture1` directory then it would print out all of the contents of the lecture1 directory 
 
 ### 5. ls command with a path to a directory ###
 ![Image](lsdirectory.png)
