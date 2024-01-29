@@ -74,10 +74,13 @@ class ChatServer {
 
 ## Part 2 ##
 
+1. The absolute path to the private key for your SSH key for logging into `ieng6`
 ![Image](private.png)
 
+2. The absolute path to the public key for your SSH key for logging into `ieng6`
 ![Image](public.png)
 
+3. A terminal interaction where you log into your `ieng6` account without being asked for a password.
 ![Image](nopassword.png)
 
 ## Part 3 ##
