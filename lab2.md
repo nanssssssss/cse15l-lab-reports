@@ -85,4 +85,4 @@ class ChatServer {
 
 ## Part 3 ##
 
-In weeks 2 and 3, I learned about scp and mkdir. Scp copies a file to a remote server. Mkdir means to make a directory. I also learned how to make a remote web server with a port through the terminal.
+In weeks 2 and 3 of lab, I learned about scp, mkdir, ports, and ssh. Scp copies a file to a remote server. Mkdir means to make a directory. Ports are used to run servers. Sites on the public web use ports, too, but they hide it from you because it’s the default. Ssh allows you to connect to the server. I also remember briefly talking about the curl command to access URLs, but I wasn’t entirely sure how to use it.
