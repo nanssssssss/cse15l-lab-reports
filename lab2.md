@@ -1,15 +1,5 @@
 # Lab Report 2 # 
 
-## Part 1 ##
-![Image](politz.png)
-
-When I add a message, the `handleRequest` method is invoked. The argument passed to the `handleRequest` method is `/add-message?s=Hello&user=jpolitz`. Within the implementation, I instantiated an ArrayList field named `messages` to collate inputs. Before the initial message, the `messages` ArrayList is initialized as an empty container. Subsequently, upon processing the command line argument, the message is parsed, split, and formatted into the structure "user: message." This formatted chat message, in the form of "jpolitz: Hello," is then appended to the `messages` ArrayList. Thus, the `messages` ArrayList now stores the concatenated message.
-
-![Image](yash.png)
-
-When I add a second message, the `handleRequest` method is again invoked.  The argument supplied to the `handleRequest` method is `/add-message?s=How%20are%20you&user=yash`. The ArrayList `messages` contains the “jpolitz: Hello” entry from the preceding message. After this subsequent command line argument is added, the new message is parsed, split, and formatted into the structure "user: message." This newly formatted chat message, in the form of "yash: How are you," is then appended to the existing content within ArrayList `messages`. Consequently, the `messages` ArrayList now store both "jpolitz: Hello" and "yash: How are you."
-
-
 ### ChatServer.java Code ###
 ```
 import java.io.IOException;
@@ -67,6 +57,15 @@ class ChatServer {
     }
 }
 ```
+
+## Part 1 ##
+![Image](politz.png)
+
+When I add a message, the `handleRequest` method is invoked. The argument passed to the `handleRequest` method is `/add-message?s=Hello&user=jpolitz`. Within the implementation, I instantiated an ArrayList field named `messages` to collate inputs. Before the initial message, the `messages` ArrayList is initialized as an empty container. Subsequently, upon processing the command line argument, the message is parsed, split, and formatted into the structure "user: message." This formatted chat message, in the form of "jpolitz: Hello," is then appended to the `messages` ArrayList. Thus, the `messages` ArrayList now stores the concatenated message.
+
+![Image](yash.png)
+
+When I add a second message, the `handleRequest` method is again invoked.  The argument supplied to the `handleRequest` method is `/add-message?s=How%20are%20you&user=yash`. The ArrayList `messages` contains the “jpolitz: Hello” entry from the preceding message. After this subsequent command line argument is added, the new message is parsed, split, and formatted into the structure "user: message." This newly formatted chat message, in the form of "yash: How are you," is then appended to the existing content within ArrayList `messages`. Consequently, the `messages` ArrayList now store both "jpolitz: Hello" and "yash: How are you."
 
 ## Part 2 ##
 
