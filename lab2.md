@@ -72,12 +72,12 @@ When I add a second message, the `handleRequest` method is again invoked.  The a
 ### 1. The absolute path to the private key for your SSH key for logging into `ieng6` ###
 ![Image](private.png)
 
-When configuring SSH access to my private key, I initiated a login session to the secure server `ieng6`. I utilized the command `cd ~/.ssh/` to navigate to the `.ssh` directory, ensuring that my working directory was appropriately set. A verification step using `pwd` confirmed my location within the correct directory. To ascertain the correct path to my private key, I executed `ls` with the absolute path, confirming the path's accuracy and the existence of the private key.
+I first typed in `ssh-keygen` to create new authentication key pairs for SSH. I then pressed enter until I overwrote the keys to generate them on my local machine. 
 
 ### 2. The absolute path to the public key for your SSH key for logging into `ieng6` ###
 ![Image](public.png)
 
-In a similar process for SSH key configuration, I commenced by logging into the secure server `ieng6` and subsequently navigating to the `.ssh` directory using `cd ~/.ssh/`. Confirming the working directory via `pwd` preceded the use of `ls` with the absolute path to my public key. This step validated the path's correctness and the public key's presence.
+I first logged into the secure server `ieng6` and navigated to the `.ssh` directory. Then, using the generated keys from `ssh-keygen`, I verified the paths to my private and public keys on the local server.
 
 ### 3. A terminal interaction where you log into your `ieng6` account without being asked for a password. ###
 ![Image](nopassword.png)
