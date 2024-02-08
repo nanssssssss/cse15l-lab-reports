@@ -77,7 +77,7 @@ I first typed in `ssh-keygen` to create new authentication key pairs for SSH. I 
 ### 2. The absolute path to the public key for your SSH key for logging into `ieng6` ###
 ![Image](public.png)
 
-I first logged into the secure server `ieng6` and navigated to the `.ssh` directory. Then, using the generated keys from `ssh-keygen`, I verified the paths to my private and public keys on the local server.
+I first logged into the secure server `ieng6` and navigated to the `.ssh` directory. Then, using the generated keys from `ssh-keygen,` I verified the path to my public keys on the local server that gets stored in my `authorized-keys` file.
 
 ### 3. A terminal interaction where you log into your `ieng6` account without being asked for a password. ###
 ![Image](nopassword.png)
