@@ -170,7 +170,7 @@ Here are some common options:
 
 I used this output to learn more of the different operations of grep and what it is often used for. 
 
-1. `grep -c`: prints only a count of the lines that match a pattern
+### 1. `grep -c`: prints only a count of the lines that match a pattern ###
 
 ```
 Nandinis-MacBook-Pro-3:docsearch nandinidesai$ grep -c "pbio" grep-results.txt 
@@ -200,7 +200,7 @@ Overall, `grep -c` is a handy tool for quickly obtaining counts of pattern occur
 
 I used this output from ChatGPT to study the different working operations of `grep -c` and how they might be useful in filtering results and counting occurrences in future coding work. 
 
-2. `grep -n`: displays the matched lines and their line numbers.
+### 2. `grep -n`: displays the matched lines and their line numbers. ###
 
 ```
 Nandinis-MacBook-Pro-3:docsearch nandinidesai$ grep -n "pmed" plos-sizes.txt 
@@ -482,7 +482,7 @@ Overall, `grep -n` is a handy tool for adding context to the matching lines by d
 
 I used this output from ChatGPT to understand the role of `grep -n` in real-world scenarios and how this command might be useful to debug programs and analyze data. 
 
-3. `grep -l`: only print the names of files containing matches, not the matches themselves.
+### 3. `grep -l`: only print the names of files containing matches, not the matches themselves. ###
 ```
 Nandinis-MacBook-Pro-3:docsearch nandinidesai$ grep -l "example" grep-results.txt
 Nandinis-MacBook-Pro-3:docsearch nandinidesai$ grep -l "journal" grep-results.txt
@@ -510,7 +510,7 @@ In summary, `grep -l` is useful for quickly identifying files that contain a spe
 
 I used this output from ChatGPT to understand the role of `grep -l` in practical scenarios and understand when it'd be useful to print out just the file directory if it contains the pattern. 
 
-4. `grep -r`: used to recursively search for a specified pattern in files within a directory and its subdirectories.
+### 4. `grep -r`: used to recursively search for a specified pattern in files within a directory and its subdirectories. ###
 ```
 Nandinis-MacBook-Pro-3:docsearch nandinidesai$ grep -r "pbio" technical
 technical/plos/pmed.0020158.txt:        PLoS Computational Biology (www.ploscompbiol.org), a collaboration
