@@ -21,6 +21,6 @@ Keys pressed: vim Li, ```<tab>```, .java, then ```<enter>```. ```<up><up><up><up
 Keys pressed: ```<up><up>```. The ```bash test.sh``` command was 2 up in the search history, so I just used the up arrow to access it.
 
 ### Step 9 ###
-![Image](step9.png)
+![Image](step9part1.png)
 ![Image](step9part2.png)
-Keys pressed: git add ., ```<enter>```, git commit -m "Fixed it", ```<enter>```, git push, ```<enter>```. I used these 3 commands to save my changes to the ListExamples.java file to GitHub. 
+Keys pressed: git add ., ```<enter>```, git commit -m "changes were made", ```<enter>```, git push, ```<enter>```. I used these 3 commands to save my changes to the ListExamples.java file to GitHub. 
