@@ -22,4 +22,5 @@ Keys pressed: ```<up><up>```. The ```bash test.sh``` command was 2 up in the sea
 
 ### Step 9 ###
 ![Image](step9.png)
+![Image](step9part2.png)
 Keys pressed: git add ., ```<enter>```, git commit -m "Fixed it", ```<enter>```, git push, ```<enter>```. I used these 3 commands to save my changes to the ListExamples.java file to GitHub. 
