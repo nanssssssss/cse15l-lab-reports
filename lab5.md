@@ -4,20 +4,27 @@
 #### Step 1. The original post from a student with a screenshot showing a symptom and a description of a guess at the bug/some sense of what the failure-inducing input is. ####
 ![Image](failureinput.png)
 ![Image](bashsymptom.png)
-Hi, I'm trying to run my test script with bash to compile and run my test cases for LinkedList.java, but I'm getting an out-of-memory error when I try to prepend and append items to my list. The error says the issue is at LinkedList.append(LinkedListExample.java:46), so I think the problem is there, but I'm unsure. Please let me know what I should do, thank you!
+
+Student: Hi, I'm trying to run my test script with bash to compile and run my test cases for LinkedList.java, but I'm getting an out-of-memory error when I try to prepend and append items to my list. The error says the issue is at LinkedList.append(LinkedListExample.java:46), so I think the problem is there, but I'm unsure. Please let me know what I should do, thank you!
+
 ![Image](where.png)
 
 #### Step 2. A response from a TA asking a leading question or suggesting a command to try. ####
-Hi, you should try testing your append() and prepend() methods separately to see which is causing the error. But if your code says the issue is at line 46 in your LinkedListExample.java, I would review your logic for appending an element after the root and your while loop. 
+TA: Hi, you should try testing your append() and prepend() methods separately to see which is causing the error. But if your code says the issue is at line 46 in your LinkedListExample.java, I would review your logic for appending an element after the root and your while loop. 
 
 #### Step 3. Another screenshot/terminal output showing what information the student got from trying that, and a clear description of the bug. ####
 ![Image](try.png)
-I tried to test append() and prepend() separately and had it confirmed that the append() method was the issue in my code. I looked over the logic of my append() method and saw that my while loop was checking if n.next was not null, meaning 'n' is not the last node. Then I move to the next node and immediately add a new node after it ('n.next = new Node(value, null'). The process repeats until 'n' reaches the last node. However, with each iteration, I'm not just moving n to the next node, but I'm also adding a new node after it. As a result, I added multiple nodes with the same value after the last node, which is not the intended behavior. I fixed it by adding the new node after I reached the last node in the list, outside of the loop. 
+
+Student: I tried to test append() and prepend() separately and had it confirmed that the append() method was the issue in my code. I looked over the logic of my append() method and saw that my while loop was checking if n.next was not null, meaning 'n' is not the last node. Then I move to the next node and immediately add a new node after it ('n.next = new Node(value, null'). The process repeats until 'n' reaches the last node. However, with each iteration, I'm not just moving n to the next node, but I'm also adding a new node after it. As a result, I added multiple nodes with the same value after the last node, which is not the intended behavior. I fixed it by adding the new node after reaching the last node in the list, outside the loop.
+
 ![Image](fixed.png)
-The output now says all tests have passed and the fields are returning the correct values. Thank you!
+
+The output now says all tests have passed, and the fields return the correct values. Thank you!
+
 ![Image](fixedoutput.png)
 
 ### All the information needed about the setup including ###
+
 #### The file & directory structure needed #### 
 - lab5/ 
   - lib
@@ -28,6 +35,7 @@ The output now says all tests have passed and the fields are returning the corre
   - LinkedListTests.java
   - LinkedListTests.class
   - test.sh
+
 #### The contents of each file before fixing the bug ####
 test.sh: 
 ```
