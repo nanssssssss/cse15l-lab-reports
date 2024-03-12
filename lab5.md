@@ -7,7 +7,6 @@
 
 Student: Hi, I'm trying to run my test script with bash to compile and run my test cases for LinkedList.java, but I'm getting an out-of-memory error when I try to prepend and append items to my list. The error says the issue is at LinkedList.append(LinkedListExample.java:46), so I think the problem is there, but I'm unsure. Please let me know what I should do, thank you!
 
-
 ![Image](where.png)
 
 #### Step 2. A response from a TA asking a leading question or suggesting a command to try. ####
@@ -40,6 +39,7 @@ The output now says all tests have passed, and the fields return the correct val
 
 #### The contents of each file before fixing the bug ####
 test.sh: 
+
 ```
 CPATH='.:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar'
 
@@ -53,6 +53,7 @@ fi
 
 java -cp $CPATH org.junit.runner.JUnitCore LinkedListTests
 ```
+
 LinkedList.java
 
 ```
@@ -179,10 +180,13 @@ public class LinkedListTests {
     }
 }
 ```
+
 #### The full command line (or lines) you ran to trigger the bug #### 
+
 [user@sahara ~] cd lab5/
 
 [user@sahara ~/lab5]$ bash test.sh
+
 #### A description of what to edit to fix the bug #### 
 
 LinkedList.java append(): 
