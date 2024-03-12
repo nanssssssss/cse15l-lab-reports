@@ -181,6 +181,7 @@ public class LinkedListTests {
 ```
 #### The full command line (or lines) you ran to trigger the bug #### 
 [user@sahara ~] cd lab5/
+
 [user@sahara ~/lab5]$ bash test.sh
 #### A description of what to edit to fix the bug #### 
 
